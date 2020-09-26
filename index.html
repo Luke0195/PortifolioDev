@@ -8,7 +8,7 @@
   <meta name="author" content="Lucas Alves Dos Santos" />
   <meta name="description" content="Desenvolvimento de uma landing para o portifolio de um desenvolvedor" />
   <meta name="keywords" content="HTML5,CSS3,JS,Front-end, Dev, Developer, WebDesigner" />
-  <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+  <meta name="viewpor" content ="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
@@ -18,6 +18,13 @@
 
 <body>
   <div class="container">
+
+    <div class="hamburger">
+      <div class="line" id="line1"></div>
+      <div class="line" id="line2"></div>
+      <div class="line" id="line3"></div>
+    </div><!--hamburger-->
+
     <header>
         <div class="img-wraper">
           <img src="assets/img/bg.jpg" alt=" Foto de um computador"/>
@@ -28,9 +35,32 @@
           <button> saiba mais </button>
         </div><!--banner-->
     </header>
-  </div><!--container-->
+
+    <div class="sidebar show-menu">
+      <nav>
+        <ul class="menu">
+          <li class="menu-item"><a href="#" class="menu-link"> Home</a></li>
+          <li class="menu-item"><a href="#" class="menu-link"> Conhecimentos</a></li>
+          <li class="menu-item"><a href="#" class="menu-link"> Projetos</a></li>
+          <li class="menu-item"><a href="#" class="menu-link"> Contato</a></li>
+          <li class="menu-item"><a href="#" class="menu-link"> Orçamento </a></li>
+        </ul><!--menu-->
+      </nav>
+      
+      <div class="social-media">
+        <a href="#"><i class="fab fa-linkedin linkedin"></i></a>
+        <a href="#"><i class="fab fa-github  github"  ></i></a>
+        <a href="#"><i class="fab fa-twitter  twitter"></i></a>
+      </div>
+  
+    </div><!--sidebar-->
   
 
+
+
+  </div><!--container-->
+  
+<script src="assets/js/script.js"></script>
 </body>
 
 </html>
